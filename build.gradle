@@ -83,6 +83,8 @@ subprojects { subproject ->
 		springRetryVersion = '1.2.2.RELEASE'
 		springVersion = '5.1.0.BUILD-SNAPSHOT'
 		springDataCommonsVersion = '2.1.0.BUILD-SNAPSHOT'
+        reactorKafkaVersion = '1.0.0.RELEASE'
+        reactorTestVersion = '3.1.0.RELEASE'
 
 		idPrefix = 'kafka'
 
@@ -203,6 +205,10 @@ project ('spring-kafka') {
 		// Spring Data projection message binding support
 		compile ("org.springframework.data:spring-data-commons:$springDataCommonsVersion", optional)
 		compile ("com.jayway.jsonpath:json-path:$jaywayJsonPathVersion", optional)
+
+		//Reactive
+		compile ("io.projectreactor.kafka:reactor-kafka:$reactorKafkaVersion", optional)
+		testCompile ("io.projectreactor:reactor-test:$reactorTestVersion")
 
 		testCompile project (":spring-kafka-test")
 	}
