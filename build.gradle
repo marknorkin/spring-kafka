@@ -83,8 +83,8 @@ subprojects { subproject ->
 		springRetryVersion = '1.2.2.RELEASE'
 		springVersion = '5.1.0.BUILD-SNAPSHOT'
 		springDataCommonsVersion = '2.1.0.BUILD-SNAPSHOT'
-        reactorKafkaVersion = '1.0.0.RELEASE'
-        reactorTestVersion = '3.1.0.RELEASE'
+        reactorKafkaVersion = '1.0.1.RELEASE'
+        reactorTestVersion = '3.1.8.RELEASE'
 
 		idPrefix = 'kafka'
 
